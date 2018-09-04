@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:padding="@dimen/x5" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_cameratype"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_weight="1"
+            android:background="#000000"
+            tools:ignore="NestedWeights" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/camera_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            app:cameraFlash="auto"
+            app:cameraGestureLongTap="capture"
+            app:cameraGesturePinch="zoom"
+            app:cameraGestureScrollVertical="exposureCorrection"
+            app:cameraGestureTap="focusWithMarker"
+            app:cameraPictureSizeAspectRatio="4:3"
+            app:cameraWhiteBalance="auto" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/camera_view"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/camera_view"
+            android:gravity="center"
+            android:background="#50000000"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seekbar_one"
+                android:layout_width="@dimen/y800"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y50"
+                android:layout_marginBottom="@dimen/y50"
+                android:tooltipText="曝光度"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/x30"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="完成"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/x30"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="辅助线"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/x30" />
+
+        <ImageView
+            android:id="@+id/iv_takepic"
+            android:layout_width="@dimen/x100"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/btn_camera_shutter" />
+
+        <ImageView
+            android:layout_width="@dimen/x80"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/light_auto" />
+
+        <ImageView
+            android:layout_width="@dimen/x80"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/mirror_center" />
+    </LinearLayout>
+
+</LinearLayout>
