@@ -48,6 +48,18 @@
             app:cameraPictureSizeAspectRatio="4:3"
             app:cameraWhiteBalance="auto" />
 
+        <com.caojing.kotlinone.LineDirectionSensorView
+            android:id="@+id/view_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/camera_view"
+            android:layout_alignEnd="@+id/camera_view"
+            android:layout_alignLeft="@+id/camera_view"
+            android:layout_alignRight="@+id/camera_view"
+            android:visibility="visible"
+            android:background="@mipmap/five_center"
+            tools:ignore="RtlHardcoded" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,6 +81,15 @@
                 tools:targetApi="o" />
 
         </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/boostLineRecycleView"
+            android:background="#50000000"
+            android:visibility="gone"
+            android:layout_alignRight="@+id/camera_view"
+            android:layout_width="@dimen/x150"
+            android:layout_height="match_parent"/>
+
     </RelativeLayout>
 
     <LinearLayout
@@ -91,6 +112,7 @@
             tools:ignore="NestedWeights" />
 
         <TextView
+            android:id="@+id/boostLineText"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -106,12 +128,14 @@
             android:src="@drawable/btn_camera_shutter" />
 
         <ImageView
+            android:id="@+id/camera_light"
             android:layout_width="@dimen/x80"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/light_auto" />
 
         <ImageView
+            android:id="@+id/camera_location"
             android:layout_width="@dimen/x80"
             android:layout_height="0dp"
             android:layout_weight="1"

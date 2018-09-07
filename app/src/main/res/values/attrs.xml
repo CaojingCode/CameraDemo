@@ -7,4 +7,9 @@
         <attr name="focus_fail_id" format="integer" />
 
     </declare-styleable>
+    <declare-styleable name="LoweImageView">
+        <!-- 比例=宽/高 -->
+        <attr name="ratio" format="float" />
+
+    </declare-styleable>
 </resources>

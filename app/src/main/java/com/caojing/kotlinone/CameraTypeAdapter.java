@@ -14,10 +14,16 @@ public class CameraTypeAdapter extends BaseQuickAdapter<CameraTypeBean, BaseView
         super(R.layout.item_cameratype_layout);
     }
 
+    private int position = 0;
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
     @Override
     protected void convert(BaseViewHolder helper, CameraTypeBean item) {
         helper.setText(R.id.tv_cameratype_name,item.getTypeName());
-        if (item.getSelecte()){
+        if (position == helper.getLayoutPosition()){
             helper.setTextColor(R.id.tv_cameratype_name, Color.parseColor("#5CA52A"));
         }else{
             helper.setTextColor(R.id.tv_cameratype_name, Color.parseColor("#FFFFFF"));
