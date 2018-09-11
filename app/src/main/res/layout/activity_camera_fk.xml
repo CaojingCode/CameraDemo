@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:orientation="horizontal"
-    tools:context=".MainActivity">
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -48,7 +47,7 @@
             app:cameraPictureSizeAspectRatio="4:3"
             app:cameraWhiteBalance="auto" />
 
-        <com.caojing.kotlinone.LineDirectionSensorView
+        <com.caojing.kotlinone.fkcamera.view.LineDirectionSensorView
             android:id="@+id/view_house"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".fkcamera.activity.CameraActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +24,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CameraPicactivtiy"
+            android:name=".fkcamera.activity.CameraPicactivtiy"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".PicEditeActivity"
+            android:name=".fkcamera.activity.PicEditeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
