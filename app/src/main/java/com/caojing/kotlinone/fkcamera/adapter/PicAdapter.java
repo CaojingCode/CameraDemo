@@ -1,10 +1,9 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.adapter;
 
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
+import com.caojing.kotlinone.R;
+import com.caojing.kotlinone.fkcamera.utils.BaseUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 

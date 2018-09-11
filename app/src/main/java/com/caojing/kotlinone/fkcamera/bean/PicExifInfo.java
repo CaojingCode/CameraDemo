@@ -1,4 +1,4 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.bean;
 
 import com.chad.library.adapter.base.entity.SectionEntity;
 

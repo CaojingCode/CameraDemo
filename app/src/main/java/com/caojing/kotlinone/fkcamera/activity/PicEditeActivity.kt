@@ -1,4 +1,4 @@
-package com.caojing.kotlinone
+package com.caojing.kotlinone.fkcamera.activity
 
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -11,6 +11,8 @@ import cn.co.willow.android.ultimate.gpuimage.core_render_filter.base_filter.GPU
 import cn.co.willow.android.ultimate.gpuimage.core_render_filter.base_filter.GPUImageHighlightShadowFilter
 import cn.co.willow.android.ultimate.gpuimage.core_render_filter.base_filter.GPUImageLevelsFilter
 import com.blankj.utilcode.util.FileUtils
+import com.caojing.kotlinone.R
+import com.caojing.kotlinone.fkcamera.utils.MyPureImageManager
 import kotlinx.android.synthetic.main.activity_pic_edite.*
 
 /**

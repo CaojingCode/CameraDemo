@@ -1,4 +1,4 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,6 +10,7 @@ import android.hardware.SensorManager;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+
 
 public class GravityUtil {
     private static final String TAG = "GravityUtil";

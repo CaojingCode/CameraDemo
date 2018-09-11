@@ -1,4 +1,4 @@
-package com.caojing.kotlinone
+package com.caojing.kotlinone.fkcamera.activity
 
 import android.Manifest
 import android.content.Intent
@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import com.blankj.utilcode.util.PermissionUtils
+import com.caojing.kotlinone.R
+import com.caojing.kotlinone.fkcamera.adapter.PicAdapter
+import com.caojing.kotlinone.fkcamera.utils.BaseUtils
 import kotlinx.android.synthetic.main.activity_camera_pic.*
 
 /**

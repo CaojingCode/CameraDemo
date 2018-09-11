@@ -1,13 +1,13 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.bean;
 
 import android.graphics.Bitmap;
 
 import com.blankj.utilcode.util.ImageUtils;
 import com.blankj.utilcode.util.ToastUtils;
+import com.caojing.kotlinone.fkcamera.utils.BaseUtils;
 
 import javax.microedition.khronos.opengles.GL10;
 
-import cn.co.willow.android.ultimate.gpuimage.core_render.BaseRenderer;
 import cn.co.willow.android.ultimate.gpuimage.core_render.PureImageRenderer;
 import cn.co.willow.android.ultimate.gpuimage.core_render_filter.GPUImageFilter;
 

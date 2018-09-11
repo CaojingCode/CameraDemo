@@ -1,4 +1,4 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.view;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,6 +13,10 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import com.caojing.kotlinone.R;
+import com.caojing.kotlinone.fkcamera.utils.Constants;
+import com.caojing.kotlinone.fkcamera.utils.RxBus;
 
 import rx.functions.Action1;
 

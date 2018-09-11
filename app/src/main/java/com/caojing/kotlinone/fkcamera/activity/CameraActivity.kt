@@ -1,26 +1,28 @@
-package com.caojing.kotlinone
+package com.caojing.kotlinone.fkcamera.activity
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
-import android.os.Environment
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.SeekBar
-import android.widget.TextView
 import android.widget.Toast
 import com.blankj.utilcode.util.FileIOUtils
 import com.blankj.utilcode.util.ImageUtils
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.TimeUtils
-import com.chad.library.adapter.base.BaseQuickAdapter
+import com.caojing.kotlinone.R
+import com.caojing.kotlinone.fkcamera.adapter.BoostLineAdapter
+import com.caojing.kotlinone.fkcamera.adapter.CameraTypeAdapter
+import com.caojing.kotlinone.fkcamera.bean.CameraTypeBean
+import com.caojing.kotlinone.fkcamera.utils.*
 import com.otaliastudios.cameraview.CameraException
 import com.otaliastudios.cameraview.CameraListener
 import com.otaliastudios.cameraview.Flash
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_camera_fk.*
 
-class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
+
+class CameraActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     private var cameraTypeAdapter: CameraTypeAdapter? = null
     private var boostLineAdapter: BoostLineAdapter? = null
     private var boostFlag = false
@@ -51,7 +53,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_camera_fk)
         camera_view.flash = Flash.AUTO
         camera_view.startAutoFocus(0f, 0f)
         iv_takepic.setOnClickListener {

@@ -1,13 +1,10 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.utils;
 
 import android.graphics.Bitmap;
-import android.opengl.EGLContext;
 import android.opengl.GLException;
-import android.opengl.GLSurfaceView;
 import android.os.Environment;
 import android.widget.ImageView;
 
-import com.blankj.utilcode.util.AppUtils;
 import com.blankj.utilcode.util.TimeUtils;
 import com.blankj.utilcode.util.Utils;
 import com.bumptech.glide.Glide;
@@ -19,7 +16,6 @@ import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.opengles.GL10;
 
 import static java.util.Collections.sort;

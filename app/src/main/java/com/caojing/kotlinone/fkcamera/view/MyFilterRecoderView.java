@@ -1,4 +1,4 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 
 import com.blankj.utilcode.util.ImageUtils;
 import com.blankj.utilcode.util.ToastUtils;
+import com.caojing.kotlinone.fkcamera.utils.BaseUtils;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;

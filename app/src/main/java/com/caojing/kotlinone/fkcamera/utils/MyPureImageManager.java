@@ -1,14 +1,15 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.utils;
 
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.ConfigurationInfo;
 import android.graphics.Bitmap;
-import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.opengl.GLSurfaceView;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+
+import com.caojing.kotlinone.fkcamera.bean.ImageRenderer;
 
 import java.io.File;
 

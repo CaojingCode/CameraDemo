@@ -1,4 +1,4 @@
-package com.caojing.kotlinone
+package com.caojing.kotlinone.fkcamera.bean
 
 data class CameraTypeBean(
         var typeName: String = "",

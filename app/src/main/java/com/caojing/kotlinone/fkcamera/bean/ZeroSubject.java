@@ -1,4 +1,4 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.bean;
 
 
 import rx.functions.Action1;

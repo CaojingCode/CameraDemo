@@ -1,7 +1,9 @@
-package com.caojing.kotlinone;
+package com.caojing.kotlinone.fkcamera.adapter;
 
 import android.graphics.Color;
 
+import com.caojing.kotlinone.R;
+import com.caojing.kotlinone.fkcamera.bean.CameraTypeBean;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 
