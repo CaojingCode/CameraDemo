@@ -10,6 +10,7 @@ import com.caojing.kotlinone.R
 import com.caojing.kotlinone.fkcamera.adapter.PicAdapter
 import com.caojing.kotlinone.fkcamera.utils.BaseUtils
 import kotlinx.android.synthetic.main.activity_camera_pic.*
+import kotlinx.android.synthetic.main.top_bar_layout.*
 
 /**
  * 房勘图库页面
@@ -54,10 +55,13 @@ class CameraPicactivtiy : AppCompatActivity() {
         picAdapter = PicAdapter()
         rl_camerapic.adapter = picAdapter
         picAdapter!!.setOnItemChildClickListener { adapter, view, position ->
-            val intent = Intent(this, PicEditeActivity::class.java)
+            val intent = Intent(this, ImageEditeActivity::class.java)
             intent.putExtra("filePath", picAdapter!!.getItem(position))
             startActivity(intent)
         }
         isPermissions()
+        iv_backe.setOnClickListener {
+            finish()
+        }
     }
 }

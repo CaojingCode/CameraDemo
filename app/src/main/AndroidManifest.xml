@@ -29,6 +29,7 @@
         <activity
             android:name=".fkcamera.activity.PicEditeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".fkcamera.activity.ImageEditeActivity" />
     </application>
 
 </manifest>
