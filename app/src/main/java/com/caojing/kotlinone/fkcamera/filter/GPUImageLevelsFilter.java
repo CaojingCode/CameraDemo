@@ -4,12 +4,13 @@ import android.opengl.GLES30;
 
 import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
 
+
 /**
  * Created by Caojing on 2018/9/12.
  * 基础滤镜：色阶滤镜
  * 你不是一个人在战斗
  */
-public class GPUImageLevelsFilter extends GPUImageFilter{
+public class GPUImageLevelsFilter extends GPUImageFilter {
 
     public static final String LEVELS_FRAGMET_SHADER = "" +
             " varying highp vec2 textureCoordinate;\n" +

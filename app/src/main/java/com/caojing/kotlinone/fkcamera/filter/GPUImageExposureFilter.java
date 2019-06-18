@@ -4,12 +4,13 @@ import android.opengl.GLES30;
 
 import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
 
+
 /**
  * Created by Caojing on 2018/9/12.
  * 基础滤镜：曝光率滤镜，值范围 -10.0~10.0，0.0为正常值
  * 你不是一个人在战斗
  */
-public class GPUImageExposureFilter extends GPUImageFilter{
+public class GPUImageExposureFilter extends GPUImageFilter {
 
     public static final String EXPOSURE_FRAGMENT_SHADER = "" +
             " varying highp vec2 textureCoordinate;\n" +

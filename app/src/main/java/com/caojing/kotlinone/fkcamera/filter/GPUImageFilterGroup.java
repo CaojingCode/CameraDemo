@@ -13,11 +13,12 @@ import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
 import jp.co.cyberagent.android.gpuimage.Rotation;
 import jp.co.cyberagent.android.gpuimage.util.TextureRotationUtil;
 
+
 /**
  * Created by Caojing on 2018/9/12.
  * 你不是一个人在战斗
  */
-public class GPUImageFilterGroup extends GPUImageFilter{
+public class GPUImageFilterGroup extends GPUImageFilter {
 
     public static final float  CUBE[]                = {
             -1.0f, -1.0f,

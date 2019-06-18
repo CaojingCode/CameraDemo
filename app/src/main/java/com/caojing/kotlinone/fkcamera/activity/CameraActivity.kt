@@ -11,6 +11,7 @@ import com.blankj.utilcode.util.FileIOUtils
 import com.blankj.utilcode.util.ImageUtils
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.TimeUtils
+import com.caojing.kotlinone.CameraPicactivtiy
 import com.caojing.kotlinone.R
 import com.caojing.kotlinone.fkcamera.adapter.BoostLineAdapter
 import com.caojing.kotlinone.fkcamera.adapter.CameraTypeAdapter

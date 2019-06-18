@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/image_color_black">
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="@dimen/x750"
+        android:layout_height="@dimen/x562"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/ivNewPreview"
+        android:layout_width="@dimen/x750"
+        android:layout_height="@dimen/x562"
+        app:layout_constraintTop_toBottomOf="@+id/ivPreview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x120"
+        android:layout_marginBottom="40dp"
+        android:text="编辑"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

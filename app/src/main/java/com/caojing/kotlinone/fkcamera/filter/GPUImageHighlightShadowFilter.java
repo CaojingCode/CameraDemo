@@ -4,6 +4,7 @@ import android.opengl.GLES30;
 
 import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
 
+
 /**
  * Created by Caojing on 2018/9/12.
  * 基础滤镜：高光阴影增强，值范围 0.0~1.0，0.0为正常值
